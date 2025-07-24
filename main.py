@@ -23,4 +23,9 @@ while True:
         email = input("Email: ")
         book.add_contact(name, phone, email)
         print("Contact added successfully.")
+
+    elif choice == "2":
+        print("Contacts list:")
+        print("\n")
+        book.list_contacts()
         
