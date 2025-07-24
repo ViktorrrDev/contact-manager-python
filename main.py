@@ -43,3 +43,7 @@ while True:
             print("Contact successfully deleted.")
         else:
             print("Contact not found.")
+
+    elif choice == "5":
+        print("Leaving the contact manager. ¡See you later!")
+        break
