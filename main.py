@@ -28,4 +28,11 @@ while True:
         print("Contacts list:")
         print("\n")
         book.list_contacts()
-        
+
+    elif choice == "3":
+        name = input("Name to search: ")
+        contact = book.find_contact(name)
+        if contact:
+            print("Contact found:", contact)
+        else:
+            print("Contact not found")        
