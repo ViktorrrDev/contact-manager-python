@@ -20,3 +20,10 @@ class ContactBook:
             if contact.name.lower() == name.lower():
                 return contact
         return None
+    
+    def delete_contact(self, name):
+        contact = self.find_contact(name)
+        if contact:
+            self.contacts.remove(contact)
+            return True
+        return False
