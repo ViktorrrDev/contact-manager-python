@@ -14,3 +14,9 @@ class ContactBook:
         else:
             for i, contact in enumerate(self.contacts, start=1):
                 print(f"{i}. {contact}")
+    
+    def find_contact(self, name):
+        for contact in self.contacts:
+            if contact.name.lower() == name.lower():
+                return contact
+        return None
