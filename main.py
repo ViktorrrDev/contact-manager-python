@@ -36,3 +36,10 @@ while True:
             print("Contact found:", contact)
         else:
             print("Contact not found")        
+
+    elif choice == "4":
+        name = input("Name to delete: ")
+        if book.delete_contact(name):
+            print("Contact successfully deleted.")
+        else:
+            print("Contact not found.")
