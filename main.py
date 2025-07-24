@@ -12,3 +12,15 @@ def show_menu():
 
 def main():
     book = ContactBook()
+
+while True:
+    show_menu()
+    choice = input("Select an option: ")
+
+    if choice == "1":
+        name = input("Name: ")
+        phone = input("Phone: ")
+        email = input("Email: ")
+        book.add_contact(name, phone, email)
+        print("Contact added successfully.")
+        
